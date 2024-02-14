@@ -1,0 +1,313 @@
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+nav button {
+    background-color: #04AA6D;
+    padding: 10px;
+}
+
+#Admin-Bereich {
+    background-color: lime;
+}
+
+#logout {
+    background-color: transparent;
+    border-style: none;
+    text-decoration: underline;
+}
+
+.profilenav {
+    display: flex;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: flex;
+    padding: 15px;
+}
+
+.inner-container {
+    display: flex;
+    width: 67%;
+    flex-direction: column;
+    border: 2px dashed #ccc;
+    padding: 10px;
+}
+
+.reply--profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid black;
+    width: 20%;
+    padding: 10px;
+}
+
+.reply--content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 10px;
+}
+
+.reply {
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.thread--name {
+    padding: 5px;
+    background-color: #04AA6D;
+}
+
+table,
+td {
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+
+th {
+    background-color: #04AA6D;
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(119, 119, 119);
+    padding: 10px;
+    color: white;
+}
+
+.gallery {
+    display: flex;
+    margin: 5px;
+    float: left;
+    width: 180px;
+}
+
+div.gallery img {
+    width: 300px;
+    padding: 5px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.besucherzahlen table {
+    font-size: 13px;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.besucherzahlen th {
+    background-color: #777;
+    color: #ffffff;
+    text-align: center;
+}
+
+article {
+    display: flex;
+}
+
+section {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+article section {
+    border: 1px solid #ccc;
+}
+
+article h3 {
+    background-color: #04AA6D;
+}
+
+.signatur {
+    border-top: 2px dotted #04AA6D;
+    font-size: 13px;
+    font-family: serif;
+    display: flex;
+    justify-content: center;
+}
+
+.ad {
+    width: 33%;
+    padding: 15px;
+}
+
+.ad img {
+    border: 1px solid #777;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.postheader {
+    display: flex;
+    width: 80%;
+    padding: 10px;
+    background-color: #04AA6D;
+}
+
+.posthread {
+    display: flex;
+    border: 1px solid black;
+}
+
+.postprofile {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    padding: 10px;
+    background-color: #ccc;
+    border-right: 1px solid black;
+}
+
+.postname {
+    display: flex;
+    width: 40%;
+    padding: 10px;
+}
+
+.postreact {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.postdate {
+    display: flex;
+    width: 20%;
+    padding: 10px;
+    background-color: #ccc;
+    border-left: 1px solid black;
+}
+
+.mailnav {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+.mailfunction {
+    display: flex;
+    justify-content: center;
+    background-color: #04AA6D;
+}
+
+.maillisting {
+    display: flex;
+    flex-direction: column;
+}
+
+.mailcontent {
+    display: flex;
+    border: 1px solid aqua;
+    padding: 5px;
+}
+
+.bannedprofiles {
+    display: flex;
+}
+
+.accordion>input[type="checkbox"] {
+    position: absolute;
+    left: -100vw;
+}
+
+.accordion .content {
+    overflow-y: hidden;
+    height: 0;
+    transition: height 0.3s ease;
+}
+
+.accordion>input[type="checkbox"]:checked~.content {
+    height: auto;
+    overflow: visible;
+}
+
+.accordion label {
+    display: block;
+}
+
+/*
+   Styling
+  */
+.accordion {
+    margin-bottom: 1em;
+}
+
+.accordion>input[type="checkbox"]:checked~.content {
+    padding: 15px;
+    border: 1px solid #e8e8e8;
+    border-top: 0;
+}
+
+.accordion .handle {
+    margin: 0;
+    font-size: 1.125em;
+    line-height: 1.2em;
+}
+
+.accordion label {
+    color: #333;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 15px;
+    background: #e8e8e8;
+}
+
+.accordion label:hover,
+.accordion label:focus {
+    background: #d8d8d8;
+}
+
+.accordion .handle label:before {
+    font-family: 'fontawesome';
+    content: "\f054";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: .58em;
+    line-height: 1.556em;
+    vertical-align: middle;
+}
+
+.accordion>input[type="checkbox"]:checked~.handle label:before {
+    content: "\f078";
+}
