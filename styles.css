@@ -38,9 +38,8 @@ nav button {
     display: flex;
 }
 
-button a {
-    text-decoration: none;
-    color: black;
+button {
+    cursor: pointer;
 }
 
 h3 a {
