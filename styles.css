@@ -42,7 +42,12 @@ button {
     cursor: pointer;
 }
 
-a {
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 a {
     text-decoration: none;
     color: black;
 }
