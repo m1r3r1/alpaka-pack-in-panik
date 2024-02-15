@@ -42,7 +42,7 @@ button {
     cursor: pointer;
 }
 
-h3 a {
+a {
     text-decoration: none;
     color: black;
 }
@@ -61,7 +61,7 @@ footer a {
     display: flex;
     width: 67%;
     flex-direction: column;
-    border: 2px dashed #ccc;
+    /*border: 2px dashed #ccc;*/
     padding: 10px;
 }
 

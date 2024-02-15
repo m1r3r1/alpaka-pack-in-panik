@@ -1,2 +1,3 @@
 <script>
+    'use strict';
 </script>
