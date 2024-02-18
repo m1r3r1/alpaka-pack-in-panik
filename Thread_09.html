@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" container="width=device-width, initial-scale=1.0">
+    <title>Alpaka-Pack</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        function show(shown, hidden) {
+            document.getElementById(shown).style.display = 'flex';
+            document.getElementById(hidden).style.display = 'none';
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="Home.html"> <img src="Bilder/Weitere Bilder/alpaka_banner_V3.jpg" alt="Banner" width="1000"></a>
+    </header>
+    <nav class="topnav">
+        <a href="Home.html"><button>Home</button></a>
+        <a href="Forum.html"><button>Forum</button></a>
+        <a href="Bilder.html"><button>Bilder</button></a>
+        <div class="profilenav">
+            <a href="Admin-Bereich.html"><button id="Admin-Bereich">Admin-Bereich 🜲</button></a>
+            <a href="Postfach.html"><button>Postfach</button></a>
+            <a href="Profil-Admin.html"><button>Mein Profil</button></a>
+            <a href="Log_out.html"><button id="logout">Ausloggen</button></a>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="Page1" class="inner-container">
+            <div class="reply">
+                <div class="reply--profile">
+                    <img src="Bilder/Profilbilder/Profilbild_Paco.jpg" width="120"></img>
+                    <p>Paco 🜲</p>
+                    <p>Mitglied seit: 20.04.199X</p>
+                    <p>zuletzt online: jetzt</p>
+                </div>
+                <div class="reply--content">
+                    <div class="thread--name">
+                        <h3>Moderation</h3>
+                    </div>
+                    <h4>Schrieb am 23.08.200X um 17:49 Uhr:</h4>
+                    <p>Thread zum Besprechen von User Verhalten!</p>
+                    </p>
+                    <div class="signatur">
+                        <p>Pull the lever, Kronk!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <img src="Bilder/Profilbilder/Profilbild_Paco.jpg" width="120"></img>
+                    <p>Paco 🜲</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Einige ältere Nachrichten wurden archiviert</h4>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Suri.html"><img src="Bilder/Profilbilder/Profilbild_Suri.jpg" width="120"></img></a>
+                    <p>Suri 🜲</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: jetzt</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Der Nutzer "Companero_" ist mehr jetzt schon zum wiederholten Male aufgefallen.
+                    </p>
+                    <p>Ich glaube er ist ein sogenannter "Troll", also er stachelt absichtlich andere Nutzer an, nur um
+                        sich daran zu erfreuen, das andere sie sich über seine Aussagen aufregen.
+                    </p>
+                    <div class="signatur">
+                        <p>Punkt Punkt Komma Strich</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Cusco.html"><img src="Bilder/Profilbilder/Profilbild_Cusco.jpg" width="100px"></a>
+                    <p>Cusco 🜲</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: jetzt</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Wie bereits erwähnt, ist Companero_ ein freund von mir. Er ist etwas anders geschaltet als die
+                        meisten, aber harmlos.</p>
+                    <p>Ist doch auch nicht schlecht, wenn ein bisschen mehr treiben im forum ist.</p>
+                    <div class="signatur">
+                        <p><em>Rom wurde nicht an einem Tag erbaut.</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Suri.html"><img src="Bilder/Profilbilder/Profilbild_Suri.jpg" width="120"></img></a>
+                    <p>Suri 🜲</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: jetzt</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Nagut, wenn du meinst..</p>
+                    <div class="signatur">
+                        <p>Punkt Punkt Komma Strich</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Suri.html"><img src="Bilder/Profilbilder/Profilbild_Suri.jpg" width="120"></img></a>
+                    <p>Suri 🜲</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: jetzt</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Blablabla</p>
+                    <div class="signatur">
+                        <p>Punkt Punkt Komma Strich</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
+        </div>
+        <div id="Page2" style="display: none" class="inner-container">
+            <div class="reply">
+                <div class="reply--profile">
+                    <img src="Bilder/Profilbilder/Profilbild_Paco.jpg" width="120"></img>
+                    <p>Paco 🜲</p>
+                    <p>Mitglied seit: 20.04.199X</p>
+                    <p>zuletzt online: jetzt</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Schrieb am 23.08.200X um 17:49 Uhr:</h4>
+                    <p>Hey Leute, schlechte Neuigkeiten.</p>
+                    <p>Blablabla</p>
+                    <p>Blablabla</p>
+                    <div class="signatur">
+                        <p>Pull the lever, Kronk!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Cusco.html"><img src="Bilder/Profilbilder/Profilbild_Cusco.jpg" width="100px"></a>
+                    <p>Cusco 🜲</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: jetzt</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Blablabla</p>
+                    <p>Blablabla</p>
+                    <div class="signatur">
+                        <p><em>Rom wurde nicht an einem Tag erbaut.</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Suri.html"><img src="Bilder/Profilbilder/Profilbild_Suri.jpg" width="120"></img></a>
+                    <p>Suri 🜲</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: jetzt</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Blablabla</p>
+                    <p>Blablabla</p>
+                    <div class="signatur">
+                        <p>Punkt Punkt Komma Strich</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <img src="Bilder/Profilbilder/Profilbild_Paco.jpg" width="120"></img>
+                    <p>Paco 🜲</p>
+                    <p>Mitglied seit: 20.04.199X</p>
+                    <p>zuletzt online: jetzt</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Schrieb am 23.08.200X um 17:49 Uhr:</h4>
+                    <p>Blablabla</p>
+                    <p>Blablabla</p>
+                    </p>
+                    <div class="signatur">
+                        <p>Pull the lever, Kronk!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Suri.html"><img src="Bilder/Profilbilder/Profilbild_Suri.jpg" width="120"></img></a>
+                    <p>Suri 🜲</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: jetzt</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Blablabla</p>
+                    <div class="signatur">
+                        <p>Punkt Punkt Komma Strich</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" onclick="return show('Page1','Page2');">
+                Show page 1
+            </a>
+        </div>
+        <div class="ad">
+            <p>Anzeige</p>
+            <a href="https://www.youtube.com/watch?v=GP5D2apU2SE"> <img src="Bilder/Werbung/Werbung_TEST.jpg"
+                    width="320"></img></a>
+        </div>
+    </div>
+    <footer>
+        <p><a href="index.html">Über</a></p>
+        <p><a href="Hilfe.html">Hilfe</a></p>
+        <p><a href="Impressum.html">Impressum</a></p>
+    </footer>
+</body>
+
+</html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpaka-Pack</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -26,79 +27,126 @@
     <div class="container">
         <div class="inner-container">
             <h1>Postfach</h1>
-            <p>✉ Du hast 13 neue Nachrichten!</p>
+            <p>✉ Du hast 3 neue Nachrichten!</p>
             <h1>Deine Nachrichten</h1>
         </div>
     </div>
     <div class="container">
         <div class="inner-container">
             <div class="mailnav">
-                <button class="mailfunction">
+                <button>
                     <p>✎ Neue Nachricht</p>
                 </button>
-                <button class="mailfunction">
+                <button>
                     <p>Posteingang</p>
                 </button>
-                <button class="mailfunction">
+                <button>
                     <p>Gesendet</p>
                 </button>
-                <button class="mailfunction">
+                <button>
                     <p>Entwürfe</p>
                 </button>
             </div>
             <div class="inner-container">
-                <div class="maillisting">
-                    <section class="accordion">
-                        <input type="checkbox" name="collapse" id="handle1" checked="checked">
-                        <h2 class="handle">
-                            <label for="handle1">Nachricht 1</label>
-                        </h2>
-                        <div class="content">
-                            <p><b>User schrieb heute um 15:40 Uhr:</b><br>Denkst du auch es war ...?</p>
-                            <h3>Wer hat Torellos Alpaka getötet?</h3>
+                <section class="accordion">
+                    <input type="checkbox" name="collapse" id="handle1" checked="checked">
+                    <h2 class="handle">
+                        <label for="handle1">Nachricht 1</label>
+                    </h2>
+                    <div class="content">
+                        <p><b>User schrieb heute um 15:40 Uhr:</b><br>Denkst du auch es war ...?</p>
+                        <h3>Wer hat Torellos Alpaka getötet?</h3>
+                        <div class="bannedprofiles">
+                            <a href="Profil-Torello_Alpakas.html"><img src="Bilder/Profilbilder/Profilbild_Torello.png"
+                                    width="100px"></a>
+                            <a href="Profil-Cusco.html"><img src="Bilder/Profilbilder/Profilbild_Cusco.jpg"
+                                    width="100px"></a>
+                            <a href="Profil-Suri.html"><img src="Bilder/Profilbilder/Profilbild_Suri.jpg"
+                                    width="100px"></a>
+                            <a href="Profil-Al_Paca.html"><img src="Bilder/Profilbilder/Profilbild_Al_Paca.jpg"
+                                    width="100px"></a>
+                            <a href="Profil-Hexe_73.html"><img src="Bilder/Profilbilder/Profilbild_Hexe_73.jpg"
+                                    width="100px"></a>
+                            <a href="Profil-Companero.html"><img src="Bilder/Profilbilder/Profilbild_Companero.jpg"
+                                    width="100px"></a>
+                        </div>
+                        <input type="radio" name="choice" value="1"> Torello_Alpakas
+                        <input type="radio" name="choice" value="2"> Cusco 🜲
+                        <input type="radio" name="choice" value="3"> Suri 🜲
+                        <input type="radio" name="choice" value="4"> Al_Paca
+                        <input type="radio" name="choice" value="5"> Hexe_73
+                        <input type="radio" name="choice" value="6"> Companero_
+                        <button onclick="auswahl()">Täter auswählen</button>
+                        <div id="2" style="display: none">Du überprüfst das Profil von cuscos genauer.. dabei
+                            fällt
+                            dir
+                            etwas auf.. es gibt einen weiteren Account mit einer identischen IP-Adresse!
+                            <p>Hinter welchen Account versteckt sich cusco?</p>
+                            <h3>Entlarve den Zweitaccount</h3>
                             <div class="bannedprofiles">
-                                <img src="Bilder/Profilbilder/Torello_Logo_V1.png" width="100px">
-                                <img src="Bilder/Profilbilder/test.jpg" width="100px">
-                                <img src="Bilder/Profilbilder/Profilbild_5.jpg" width="100px">
-                                <img src="Bilder/Profilbilder/Profilbild_9.jpg" width="100px">
+                                <img src="Bilder/Profilbilder/Profilbild_Torello.png" width="100px">
+                                <img src="Bilder/Profilbilder/Profilbild_Suri.jpg" width="100px">
+                                <img src="Bilder/Profilbilder/Profilbild_Al_Paca.jpg" width="100px">
+                                <img src="Bilder/Profilbilder/Profilbild_Hexe_73.jpg" width="100px">
+                                <img src="Bilder/Profilbilder/Profilbild_Companero.jpg" width="100px">
                             </div>
-                            <form>
-                                <input type="radio" name="choice" value="user1"> User 1
-                                <input type="radio" name="choice" value="user2"> User 2
-                                <input type="radio" name="choice" value="user3"> User 3
-                                <input type="radio" name="choice" value="user4"> User 4
-                                <button>✎ Antworten</button>
-                            </form>
+                            <input type="radio" name="choice" value="7"> User 1
+                            <input type="radio" name="choice" value="8"> User 2
+                            <input type="radio" name="choice" value="9"> User 3
+                            <input type="radio" name="choice" value="10"> User 4
+                            <input type="radio" name="choice" value="11"> User 5
+                            <button onclick="auswahl2()">Aufdecken</button>
                         </div>
-                    </section>
-                    <section class="accordion">
-                        <input type="checkbox" name="collapse2" id="handle2">
-                        <h2 class="handle">
-                            <label for="handle2">Nachricht 2</label>
-                        </h2>
-                        <div class="content">
-                            <p><b>Admin_02 schrieb am 06.04. um 05:40 Uhr:</b><br>Schau dir bitte mal das hier an aber
-                                pssssssh! Von mir weißt du nichts.</p>
-                            <img src="Bilder/Weitere Bilder/Beweis_1.jpg" width="300 px">
-                            <button>✎ Antworten</button>
+                        <div id="6" style="display: none">Du überprüfst das Profil von companero_ genauer....
+                            dabei
+                            fällt dir
+                            etwas auf.. es gibt einen weiteren Account mit einer identischebn IP-Adresse!
+                            <p>Welcher Account versteckt sich hinter companero_?</p>
+                            <h3>Entlarve den Hauptaccount</h3>
+                            <div class="bannedprofiles">
+                                <img src="Bilder/Profilbilder/Profilbild_Torello.png" width="100px">
+                                <img src="Bilder/Profilbilder/Profilbild_Cusco.jpg" width="100px">
+                                <img src="Bilder/Profilbilder/Profilbild_Suri.jpg" width="100px">
+                                <img src="Bilder/Profilbilder/Profilbild_Al_Paca.jpg" width="100px">
+                                <img src="Bilder/Profilbilder/Profilbild_Hexe_73.jpg" width="100px">
+                            </div>
+                            <input type="radio" name="choice" value="7"> User 1
+                            <input type="radio" name="choice" value="8"> User 2
+                            <input type="radio" name="choice" value="9"> User 3
+                            <input type="radio" name="choice" value="10"> User 4
+                            <input type="radio" name="choice" value="11"> User 5
+                            <button onclick="auswahl2()">Aufdecken</button>
                         </div>
-                    </section>
-                    <section class="accordion">
-                        <input type="checkbox" name="collapse2" id="handle3">
-                        <h2 class="handle">
-                            <label for="handle3">Nachricht 3</label>
-                        </h2>
-                        <div class="content">
-                            <p><b>REICH_ueber_NACHT schrieb am 06.04. um 05:40 Uhr:</b><br>Wollten SIE schon IMMEr
-                                unglaublich REICH werden?! <a
-                                    href="https://www.bpb.de/kurz-knapp/lexika/lexikon-der-wirtschaft/20742/steuerhinterziehung/">
-                                    >>hier
-                                    klicken<< </a>
-                            </p>
-                            <button>✎ Antworten</button>
-                        </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
+                <section class="accordion">
+                    <input type="checkbox" name="collapse2" id="handle2">
+                    <h2 class="handle">
+                        <label for="handle2">Nachricht 2</label>
+                    </h2>
+                    <div class="content">
+                        <p><b>Admin_02 schrieb am 06.04. um 05:40 Uhr:</b><br>Schau dir bitte mal das hier an
+                            aber
+                            pssssssh! Von mir weißt du nichts.</p>
+                        <img src="Bilder/Weitere Bilder/Beweis_1.jpg" width="300 px">
+                        <button>✎ Antworten</button>
+                    </div>
+                </section>
+                <section class="accordion">
+                    <input type="checkbox" name="collapse2" id="handle3">
+                    <h2 class="handle">
+                        <label for="handle3">Nachricht 3</label>
+                    </h2>
+                    <div class="content">
+                        <p><b>REICH_ueber_NACHT schrieb am 06.04. um 05:40 Uhr:</b><br>Wollten SIE schon IMMEr
+                            unglaublich REICH werden?! <a
+                                href="https://www.bpb.de/kurz-knapp/lexika/lexikon-der-wirtschaft/20742/steuerhinterziehung/">
+                                >>hier
+                                klicken<< </a>
+                        </p>
+                        <button>✎ Antworten</button>
+                    </div>
+                </section>
             </div>
         </div>
     </div>

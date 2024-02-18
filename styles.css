@@ -116,18 +116,9 @@ footer {
     color: white;
 }
 
-.gallery {
+.galerie {
     display: flex;
-    margin: 5px;
-    float: left;
-    width: 180px;
-}
-
-div.gallery img {
-    width: 300px;
-    padding: 5px;
-    height: auto;
-    border: 1px solid #ccc;
+    justify-content: space-between;
 }
 
 .besucherzahlen table {
@@ -203,6 +194,14 @@ article h3 {
     border-right: 1px solid black;
 }
 
+.postprofile img {
+    border: 1px solid #777;
+}
+
+.reply img {
+    border: 1px solid #777;
+}
+
 .postname {
     display: flex;
     width: 40%;
@@ -223,27 +222,10 @@ article h3 {
     border-left: 1px solid black;
 }
 
-.mailnav {
-    display: flex;
-    flex-direction: column;
-    width: 10%;
-}
 
-.mailfunction {
-    display: flex;
-    justify-content: center;
+.mailnav button {
+    width: 15%;
     background-color: #04AA6D;
-}
-
-.maillisting {
-    display: flex;
-    flex-direction: column;
-}
-
-.mailcontent {
-    display: flex;
-    border: 1px solid aqua;
-    padding: 5px;
 }
 
 .bannedprofiles {

@@ -7,9 +7,14 @@
     <title>Alpaka-Pack</title>
     <link rel="stylesheet" href="styles.css" />
     <script>
-        function show(shown, hidden) {
+        function show(shown) {
+            var pages = document.querySelectorAll('.page');
+
+            pages.forEach(function (page) {
+                page.style.display = 'none';
+            });
+
             document.getElementById(shown).style.display = 'flex';
-            document.getElementById(hidden).style.display = 'none';
             return false;
         }
     </script>
@@ -31,10 +36,11 @@
         </div>
     </nav>
     <div class="container">
-        <div id="Page1" class="inner-container">
+        <div id="Page1" class="inner-container page">
             <div class="reply">
                 <div class="reply--profile">
-                    <img src="Bilder/Profilbilder/Torello_Logo_V1.png" width="120"></img>
+                    <a href="Profil-Torello_Alpakas.html"><img src="Bilder/Profilbilder/Profilbild_Torello.png"
+                            width="120"></img></a>
                     <p>Torello_Alpakas</p>
                     <p>Mitglied seit: 20.04.1999</p>
                     <p>zuletzt online: heute, 15:00 Uhr</p>
@@ -43,11 +49,16 @@
                     <div class="thread--name">
                         <h3>MORD TOTSCHLAG HUNNYBEE iST TOT!!</h3>
                     </div>
-                    <h4>Schrieb am 01.01.200X um 14:49 Uhr:</h4>
+                    <h4>Schrieb am 01.01.200X um 11:49 Uhr:</h4>
                     <p>MEIN GELIEBTES ALPAKA HUNNYBEE WURDE KALTBLÜTIG ERMORDET!!!! WER WAR DAS UND WARUM MEINE WELT IST
-                        ZUSAMMENGEBROCHEN MEIN BESTES TIER IST TOT!!!! MEIN SONNENSCHEIN <img
-                            src="Bilder/Weitere Bilder/winken.gif">
+                        ZUSAMMENGEBROCHEN MEIN BESTES TIER IST TOT!!!! MEIN SONNENSCHEIN
                     </p>
+                    <p>Als ich heute früh gegen 9 Uhr den Stall betrat stellte sich mir ein fürchterliches Bild.. mein
+                        geliebter Hunnybee..leblos auf dem Boden..ich bin wortlos..</p>
+                    <p>Ich bin mir sicher das es einer aus dem Forum gewesen sein muss.. NEID ZERFRISST..
+                    </p>
+                    <p>An den oder die Täter: SCHÄMT EUCH..soll euch der Schlag treffen Pfui Teufel a la merda, puto
+                        desgraciat ves a cagar a la via, miserable canalla! </p>
                     <div class="signatur">
                         <p>Torello Alpakas© -Hochklassige Alpaka Zucht aus Niederheim-Flörstal</p>
                     </div>
@@ -55,8 +66,8 @@
             </div>
             <div class="reply">
                 <div class="reply--profile">
-                    <img src="Bilder/Profilbilder/Profilbild_3.jpg" width="120"></img>
-                    <p>User_Blümchen</p>
+                    <img src="Bilder/Profilbilder/Profilbild_Blümchen.jpg" width="120"></img>
+                    <p>_Blümchen</p>
                     <p>Mitglied seit: 20.04.</p>
                     <p>zuletzt online: heute, 15:00 Uhr</p>
                 </div>
@@ -73,62 +84,15 @@
             </div>
             <div class="reply">
                 <div class="reply--profile">
-                    <img src="Bilder/Profilbilder/Profilbild_2.jpg" width="120"></img>
-                    <p>User_name</p>
+                    <img src="Bilder/Profilbilder/Profilbild_Pete.jpg" width="120"></img>
+                    <p>Pete</p>
                     <p>Mitglied seit: 20.04.</p>
                     <p>zuletzt online: heute, 15:00 Uhr</p>
                 </div>
                 <div class="reply--content">
                     <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
-                    <p>Oh nein, wie traurig! Wer kann das nur gewesen sein???</p>
-                    <div class="signatur">
-                        <p><i>Carpe Diem</i></p>
-                    </div>
-                </div>
-            </div>
-            <div class="reply">
-                <div class="reply--profile">
-                    <img src="Bilder/Profilbilder/Profilbild_1.jpg" width="120"></img>
-                    <p>User_yx</p>
-                    <p>Mitglied seit: 20.04.</p>
-                    <p>zuletzt online: heute, 15:00 Uhr</p>
-                </div>
-                <div class="reply--content">
-                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
-                    <p>juckt wen? lol</p>
-                    <div class="signatur">
-                        <p><b>work hard. play hard.</b></p>
-                    </div>
-                </div>
-            </div>
-            <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
-        </div>
-        <div id="Page2" style="display: none" class="inner-container">
-            <div class="reply">
-                <div class="reply--profile">
-                    <img src="Bilder/Profilbilder/Profilbild_4.jpg" width="120"></img>
-                    <p>User_69</p>
-                    <p>Mitglied seit: 20.04.</p>
-                    <p>zuletzt online: heute, 15:00 Uhr</p>
-                </div>
-                <div class="reply--content">
-                    <h3>Antwortete am 01.01.200X um 14:49 Uhr:</h3>
-                    <p>*Schluck* krass wer macht denn sowas? Abartig!</p>
-                    <div class="signatur">
-                        <p>Hier könnte ihre Werbung stehen</p>
-                    </div>
-                </div>
-            </div>
-            <div class="reply">
-                <div class="reply--profile">
-                    <img src="Bilder/Profilbilder/Profilbild_5.jpg" width="120"></img>
-                    <p>Chuck_N0rris</p>
-                    <p>Mitglied seit: 20.04.</p>
-                    <p>zuletzt online: heute, 15:00 Uhr</p>
-                </div>
-                <div class="reply--content">
-                    <h3>Antwortete am 01.01.200X um 14:49 Uhr:</h3>
-                    <p>Würd mir stinken wenn ich du wär!</p>
+                    <p>Welcher KRANKER MENSCH würde sowas tun? Unfassbar! Ekelhaft! Ich glaube ich verliere den Glauben
+                        an die Menschheit..</p>
                     <div class="signatur">
                         <p>Punkt Punkt Komma Strich</p>
                     </div>
@@ -136,13 +100,67 @@
             </div>
             <div class="reply">
                 <div class="reply--profile">
-                    <img src="Bilder/Profilbilder/Profilbild_6.jpg" width="120"></img>
-                    <p>Hexe-71</p>
+                    <img src="Bilder/Profilbilder/Profilbild_Uwe_69.jpg" width="120"></img>
+                    <p>Uwe_69</p>
                     <p>Mitglied seit: 20.04.</p>
                     <p>zuletzt online: heute, 15:00 Uhr</p>
                 </div>
                 <div class="reply--content">
-                    <h3>Antwortete am 01.01.200X um 14:49 Uhr:</h3>
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Das darf doch nicht wahr sein!!! Ist die Polizei schon alamiert?? Welcher Dreckskerl war das?</p>
+                    <p>Ohren steif halten Torello..wir finden schon heraus wer das war..</p>
+                    <div class="signatur">
+                        <p><b>Bleibt senkrecht..!</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <img src="Bilder/Profilbilder/Profilbild_Kitty.jpg" width="120"></img>
+                    <p>Kitty</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Oh nein, wie grausam! Wer kann das nur gewesen sein???</p>
+                    <div class="signatur">
+                        <p><i>Carpe Diem</i></p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" onclick="return show('Page2');">Show page 2</a>
+            <a href="#" onclick="return show('Page3');">Show page 3</a>
+            <a href="#" onclick="return show('Page4');">Show page 4</a>
+            <a href="#" onclick="return show('Page5');">Show page 5</a>
+        </div>
+        <div id="Page2" style="display: none" class="inner-container page">
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Companero.html"><img src="Bilder/Profilbilder/Profilbild_Companero.jpg"
+                            width="120"></img></a>
+                    <p>Companero_</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>*Schluck* krass wer macht denn sowas? Abartig!</p>
+                    <div class="signatur">
+                        <p><b>work hard. play hard.</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Hexe_73.html"><img src="Bilder/Profilbilder/Profilbild_Hexe_73.jpg"
+                            width="120"></img></a>
+                    <p>Hexe_73</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
                     <p>Oh nein das arme Tier ich kann mir den schmerz gar nicht
                         vorstellen wie furchtbar
                         das
@@ -151,14 +169,376 @@
                         wer
                         würde so etwas nur tuen? das ist schrecklich einfach nur
                         schrecklich</p>
+                    <p>armer schöner Hunnybeee psschhh schlaf in Frieden..</p>
                     <div class="signatur">
                         <p>träume nicht dein traum sondern leb deinen traum!!
                         </p>
                     </div>
                 </div>
             </div>
-            <a href="#" onclick="return show('Page1','Page2');">
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Torello_Alpakas.html"><img src="Bilder/Profilbilder/Profilbild_Torello.png"
+                            width="120"></img></a>
+                    <p>Torello_Alpakas</p>
+                    <p>Mitglied seit: 20.04.1999</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Der Tatort.. meine Herz ist gebrochen..
+                    </p>
+                    <img src="Bilder/Beweismittel/Tatort.jpg" width="800 px">
+                    <div class="signatur">
+                        <p>Torello Alpakas© -Hochklassige Alpaka Zucht aus Niederheim-Flörstal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <img src="Bilder/Profilbilder/Profilbild_Pete.jpg" width="120"></img>
+                    <p>Pete</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Einfach Grausam.. was ist das für ein Papier was auf dem Stallboden liegt?</p>
+                    <div class="signatur">
+                        <p>Punkt Punkt Komma Strich</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Al_Paca.html"><img src="Bilder/Profilbilder/Profilbild_Al_Paca.jpg"
+                            width="120"></img></a>
+                    <p>Al_Paca</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Das ist jetzt nicht wahr oder? Gott im Himmel...</p>
+                    <p>Konnte dein Tierarzt nichts mehr tun? Was ist die Todesursache? Gab es äußere Verletzungen?</p>
+                    <div class="signatur">
+                        <p>An apple a day keeps the doctor away</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" onclick="return show('Page1');">
                 Show page 1
+            </a>
+            <a href="#" onclick="return show('Page3');">
+                Show page 3
+            </a>
+            <a href="#" onclick="return show('Page3');">
+                Show page 4
+            </a>
+            <a href="#" onclick="return show('Page5');">
+                Show page 5
+            </a>
+        </div>
+        <div id="Page3" style="display: none" class="inner-container page">
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Torello_Alpakas.html"><img src="Bilder/Profilbilder/Profilbild_Torello.png"
+                            width="120"></img></a>
+                    <p>Torello_Alpakas</p>
+                    <p>Mitglied seit: 20.04.1999</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>EIN ERPRESSERSCHREIBEN..
+                    </p>
+                    <img src="Bilder/Beweismittel/SCAN_Erpresserbrief.jpg" width="600 px">
+                    <div class="signatur">
+                        <p>Torello Alpakas© -Hochklassige Alpaka Zucht aus Niederheim-Flörstal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <img src="Bilder/Profilbilder/Profilbild_Locke.jpg" width="120"></img>
+                    <p>Locke</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Das gibt es doch nicht! Mein tiefstes Beileid Torello, kranke Welt..</p>
+                    <p>Sieht wohl ganz nach einer fehlgeschlagenen Entführung aus oder? Vielleicht zu viel
+                        Betäubungsmittel zum Abtransport injiziert? Gabs sonst irgendwelche Spuren am Tatort, Einbruch?
+                    </p>
+                    <div class="signatur">
+                        <p>Ich bin nicht die Signatur, ich putz hier nur
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Torello_Alpakas.html"><img src="Bilder/Profilbilder/Profilbild_Torello.png"
+                            width="120"></img></a>
+                    <p>Torello_Alpakas</p>
+                    <p>Mitglied seit: 20.04.1999</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Keine Einbruchsspuren..Stall ist offen - Brandschutz. Nur ein Materiallager ist verschlossen,
+                        dort war alles unberührt, auch sonst wurde nichts geklaut. Es lag Erbrochenes auf dem
+                        Stallboden, keine Wunden, er war wie eingeschlafen.. Der Arzt konnte nichts mehr machen.. mein
+                        GELIEBTER HUNNYBEE..war bereits von uns gegangen.
+                    </p>
+                    <p>Habe die Polizei direkt gerufen, die haben sich das kurz angeschaut und meine Anzeige
+                        aufgenommen, mehr aber nicht. VERSTEHEN DIE NICHT DAS HIER EIN MÖRDER FREI RUM LÄUFT?</p>
+                    <p>Zum Glück habe ich Kontakt zum Bürgermeister, Presse, Anwälte,.. der TÄTER WIRD NICHT ENTWISCHEN
+                    </p>
+                    <div class="signatur">
+                        <p>Torello Alpakas© -Hochklassige Alpaka Zucht aus Niederheim-Flörstal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <img src="Bilder/Profilbilder/Profilbild_Kitty.jpg" width="120"></img>
+                    <p>Kitty</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Dieses "Erpresserschreiben" ist mehr als Merkwürdig..zum einen natürlich die schreckliche
+                        Grammatik aber zum anderen auch der Treffpunkt zur Geldübergabe. Es fehlt eine Uhrzeit? Das
+                        Papier ist auch komisch, quadratisch?</p>
+                    <div class="signatur">
+                        <p><em>Carpe Diem</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <img src="Bilder/Profilbilder/Profilbild_Uwe_69.jpg" width="120"></img>
+                    <p>Uwe_69</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Das Erpresserbrief ist ein Witz.. soll bestimmt nur Ablenken! Wie geht es deinen anderen
+                        Tieren? Der oder die Dreckskerle hatten es wohl wirklich auf den armen Hunnybee abgesehen..</p>
+                    <p>Wenn du noch nen starken Mann brauchst um jemanden Aufzumischen sag Bescheid...wie du weißt, war
+                        ich beim Bund Torello...</p>
+                    <div class="signatur">
+                        <p><b>Bleibt senkrecht..!</b></p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" onclick="return show('Page1');">
+                Show page 1
+            </a>
+            <a href="#" onclick="return show('Page2');">
+                Show page 2
+            </a>
+            <a href="#" onclick="return show('Page4');">
+                Show page 4
+            </a>
+            <a href="#" onclick="return show('Page5');">
+                Show page 5
+            </a>
+        </div>
+        <div id="Page4" style="display: none" class="inner-container page">
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Suri.html"><img src="Bilder/Profilbilder/Profilbild_Suri.jpg" width="120"></img></a>
+                    <p>Suri 🜲</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Lieber Torello, ich kann kaum glauben was ich hier lese. Ich möchte dir im Namen des ganzen Teams
+                        von Alpaka-Pack.de unser Beleid aussprechen. Bitte sag uns Bescheid, wenn wir dich auf
+                        irgendeine Weise unterstützen können.</p>
+                    <p>Ich möchte trotzdem bitten in dieser Diskussion zivilisiert zu bleiben und unsere
+                        Forums-Richtlinien zu beachten!
+                    </p>
+                    <div class="signatur">
+                        <p>Punkt Punkt Komma Strich</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <img src="Bilder/Profilbilder/Profilbild_Kitty.jpg" width="120"></img>
+                    <p>Kitty</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Blabla</p>
+                    <div class="signatur">
+                        <p><em>Carpe Diem</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Al_Paca.html"><img src="Bilder/Profilbilder/Profilbild_Al_Paca.jpg"
+                            width="120"></img></a>
+                    <p>Al_Paca</p>
+                    <p>Mitglied seit: 20.04.1999</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Also Erbrochenes spricht eher für eine Vergiftung als ein versehentliches oder absichtliches
+                        "einschläfern" durch Narkotika. Ein Verabreichen von Medikamenten oder füttern von Giftködern
+                        käme in Frage.</p>
+                    <div class="signatur">
+                        <p>An apple a day keeps the doctor away</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Torello_Alpakas.html"><img src="Bilder/Profilbilder/Profilbild_Torello.png"
+                            width="120"></img></a>
+                    <p>Torello_Alpakas</p>
+                    <p>Mitglied seit: 20.04.1999</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Hab für Hunnybee eine Autopsie veranlasst! Ich möchte gewissheit. Meine anderen Tiere geht es
+                        gut, alles normal, Gott sei Dank.
+                    </p>
+                    <p>Diese Erpresserbrief ist ein schlechte Witz! Ich lache.. was für 2000? 2000 DM? Euro? Bestimmmt
+                        Euro, in Mark wäre das ist doch zu wenig für den Aufwand..aber immernoch alles zu wenig für MEIN
+                        GELIEBTEN
+                        HUNNYBEE..NIE WERDE ICH DICH ERSETZEN KÖNNEN</p>
+                    <p>Dieses Briefpapier war ganz komisch, so glatt. Irgendein besonderes Bastelpapier? Habe es meinen
+                        Privatdetektiv gegeben.
+                    </p>
+                    <div class="signatur">
+                        <p>Torello Alpakas© -Hochklassige Alpaka Zucht aus Niederheim-Flörstal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <img src="Bilder/Profilbilder/Profilbild_Ursula-Weinbrand.gif" width="120"></img>
+                    <p>Ursula-Weinbrand</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete vor 5 Sekunden:</h4>
+                    <p>Nein, nein, nein WIE FURCHTBAR! Der arme wunderschöne Hunnybee wurde EIN SINNLOSES OPFER EINES
+                        TIERQUÄLERS!
+                        Ich weiß wir hatten unsere differenzen in der Vergangenheit Torello, aber das ist wirklich
+                        furchtbar. MORD, ES IST MORD.</p>
+                    <div class="signatur">
+                        <p>Liebe Grüße eure Ulla</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" onclick="return show('Page1');">
+                Show page 1
+            </a>
+            <a href="#" onclick="return show('Page2');">
+                Show page 2
+            </a>
+            <a href="#" onclick="return show('Page3');">
+                Show page 3
+            </a>
+            <a href="#" onclick="return show('Page5');">
+                Show page 5
+            </a>
+        </div>
+        <div id="Page5" style="display: none" class="inner-container page">
+            <div class="reply">
+                <div class="reply--profile">
+                    <img src="Bilder/Profilbilder/Profilbild_Torello.png" width="120"></img>
+                    <p>Torello</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 19:49 Uhr:</h4>
+                    <p>Gerade nocheinmal mein Gelände abgelaufen und das hier auf dem Weg der Rückseite des Stalls
+                        gefunden.. So eine Teil wie beim Zahnarzt? So eine Gesichtsschutz? Das ist eindeutig nicht von
+                        mir, weder von meinen Angestellten und Arbeitern oder meiner Familie..</p>
+                    <img src="Bilder/Beweismittel/Beweismittel.jpg" width="500px">
+                    <div class="signatur">
+                        <p>Punkt Punkt Komma Strich</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <img src="Bilder/Profilbilder/Profilbild_Locke.jpg" width="120"></img>
+                    <p>Locke</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Irgendwas stinkt da gewaltig!</p>
+                    <div class="signatur">
+                        <p>Ich bin nicht die Signatur, ich putz hier nur</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <a href="Profil-Companero.html"><img src="Bilder/Profilbilder/Profilbild_Companero.jpg"
+                            width="120"></img></a>
+                    <p>Companero_</p>
+                    <p>Mitglied seit: 20.04.1999</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete am 01.01.200X um 14:49 Uhr:</h4>
+                    <p>Huch, das ist wirklich merkwürdig. Würde so eine maske nicht auch ein tierarztz tragen?</p>
+                    <p>Der schreibstil des erpresserbrief erinnert mich an eine bestimmte person aus dem forum...</p>
+                    <div class="signatur">
+                        <p><em>Work hard. Play hard.</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="reply--profile">
+                    <img src="Bilder/Profilbilder/Profilbild_Paco.jpg" width="120"></img>
+                    <p>Paco 🜲</p>
+                    <p>Mitglied seit: 20.04.</p>
+                    <p>zuletzt online: heute, 15:00 Uhr</p>
+                </div>
+                <div class="reply--content">
+                    <h4>Antwortete vor 5 Sekunden:</h4>
+                    <p>Torello, es tut mir unglaublich Leid was passiert ist. Es schmerzt mich, das es gut möglich
+                        ist, dass es jemand aus unserem Forum war, der das getan hat. Wir sind doch hier weil uns alle
+                        etwas
+                        verbindet – unsere Liebe zu Alpacas.</p>
+                    <div class="signatur">
+                        <p>Pull the lever, Kronk!</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" onclick="return show('Page1');">
+                Show page 1
+            </a>
+            <a href="#" onclick="return show('Page2');">
+                Show page 2
+            </a>
+            <a href="#" onclick="return show('Page3');">
+                Show page 3
+            </a>
+            <a href="#" onclick="return show('Page4');">
+                Show page 4
             </a>
         </div>
         <div class="ad">
